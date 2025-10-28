@@ -34,15 +34,15 @@ body{
   max-width:1300px;
   display:flex;
   gap:18px;
-  padding:12px;
+  padding:10px;
   align-items:flex-start;
 }
 .canvas-wrap{
   flex:1;
-  min-height:360px;
+  min-height:400px;
   background:var(--card);
   border-radius:18px;
-  padding:14px;
+  padding:10px;
   display:flex;
   flex-direction:column;
   gap:10px;
