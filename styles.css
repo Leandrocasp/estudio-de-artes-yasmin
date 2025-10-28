@@ -39,7 +39,7 @@ body{
 }
 .canvas-wrap{
   flex:1;
-  min-height:30px;
+  min-height:360px;
   background:var(--card);
   border-radius:18px;
   padding:10px;
