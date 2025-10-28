@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estúdio de Artes — Yasmin</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Estúdio de Artes para a Yasmin — desenhe e salve suas obras. Compatível com celular, tablet e desktop.">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎨 Yasmin Art Studio</div>
+    <div class="subtitle">Desenhe, pinte e exporte suas criações</div>
+  </header>
+  <main class="wrap">
+    <section class="canvas-wrap">
+      <canvas id="canvas" aria-label="Tela de desenho da Yasmin"></canvas>
+      <div class="hint">Toque, desenhe ou use a caneta. Atalhos: B pincel, E borracha, Ctrl+Z desfazer</div>
+    </section>
+    <aside class="controls">
+      <div class="panel">
+        <label class="row"><span>Cor</span><input id="color" type="color" value="#1f2937"></label>
+        <label class="row"><span>Tamanho</span><input id="size" type="range" min="1" max="80" value="6"></label>
+        <label class="row"><span>Opacidade</span><input id="opacity" type="range" min="0.05" max="1" step="0.05" value="1"></label>
+        <div class="row buttons">
+          <button id="brush" class="btn primary">Pincel</button>
+          <button id="eraser" class="btn">Borracha</button>
+        </div>
+        <div class="row buttons">
+          <button id="undo" class="btn">Undo</button>
+          <button id="redo" class="btn">Redo</button>
+          <button id="clear" class="btn danger">Limpar</button>
+        </div>
+        <div class="row buttons">
+          <button id="export" class="btn success">Exportar PNG</button>
+          <button id="copy" class="btn">Copiar</button>
+        </div>
+        <div class="row small"><label><input id="autosave" type="checkbox" checked> Auto-salvar</label></div>
+        <div class="row small">Estados salvos: <span id="states">0</span></div>
+      </div>
+      <div class="panel info">
+        <h4>Sobre</h4>
+        <p>Projeto pronto para GitHub Pages. Abra <code>index.html</code> ou faça deploy.</p>
+        <p class="muted">Nome do repo sugerido: <strong>estudio-de-artes-yasmin</strong></p>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">Feito com ❤️ para Yasmin Lima Pereira</footer>
+  <script src="app.js"></script>
+</body>
+</html>
